@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom & Joy - Flower Subscriptions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Bloom & Joy</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#subscriptions">Subscriptions</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Fresh Flowers Delivered to Your Door</h1>
+                <p>Subscribe and save 15% on all deliveries</p>
+                <div class="ai-recommendation">
+                    <input type="text" id="occasion-input" placeholder="What's the occasion?">
+                    <button id="recommend-btn">Get AI Recommendations</button>
+                </div>
+                <div id="ai-results" class="ai-results"></div>
+            </div>
+        </section>
+
+        <section id="subscriptions" class="subscriptions">
+            <h2>Choose Your Perfect Plan</h2>
+            <div class="subscription-plans">
+                <div class="plan">
+                    <h3>Weekly Bliss</h3>
+                    <p class="price">$29.99<span>/week</span></p>
+                    <ul>
+                        <li>Fresh bouquet every week</li>
+                        <li>Seasonal selections</li>
+                        <li>Free delivery</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="weekly">Subscribe</button>
+                </div>
+                <div class="plan featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Monthly Elegance</h3>
+                    <p class="price">$49.99<span>/month</span></p>
+                    <ul>
+                        <li>Premium bouquet monthly</li>
+                        <li>Customizable preferences</li>
+                        <li>Free vase included</li>
+                        <li>Priority customer service</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="monthly">Subscribe</button>
+                </div>
+                <div class="plan">
+                    <h3>Festive Special</h3>
+                    <p class="price">From $39.99</p>
+                    <ul>
+                        <li>Holiday arrangements</li>
+                        <li>One-time or recurring</li>
+                        <li>Special occasion designs</li>
+                    </ul>
+                    <button class="subscribe-btn" data-plan="festive">View Options</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="products">
+            <h2>Our Seasonal Collection</h2>
+            <div class="product-grid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <h3>Free Delivery</h3>
+                <p>On all subscription orders</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Flexible Scheduling</h3>
+                <p>Skip or reschedule anytime</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-seedling"></i>
+                <h3>Farm Fresh</h3>
+                <p>Direct from local growers</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>hello@bloomandjoy.com</p>
+                <p>1-800-FLOWERS</p>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe to Newsletter</h3>
+                <input type="email" placeholder="Your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Bloom & Joy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span>$0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
